@@ -9,6 +9,9 @@ import {
    Description,
    ViewButton,
 } from "./styles";
+import { ButtonSocialGoogle } from '../../components/ButtonSocialGoogle/ButtonSocialGoogle';
+import { ButtonSocialFacebook } from '../../components/ButtonSocialFacebook/ButtonSocialFacebook';
+
 
 const Login: React.FC = () => {
    return (
@@ -19,7 +22,12 @@ const Login: React.FC = () => {
 
                <Description>Entrar com redes sociais</Description>
 
-               <ViewButton></ViewButton>
+               <ViewButton>
+                  <ButtonSocialGoogle title="Google"/>
+
+                  <ButtonSocialFacebook iconName="facebook" title="Facebook"/>
+
+               </ViewButton>
             </ContentHeader>
 
             <ContentBody></ContentBody>

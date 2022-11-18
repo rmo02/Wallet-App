@@ -22,7 +22,7 @@ export const ContentFooter = styled.View`
 
 
 export const ViewButton = styled.View`
-
+   flex-direction: row;
 `;
 
 export const Title = styled.Text`
@@ -36,5 +36,6 @@ export const Title = styled.Text`
 export const Description = styled.Text`
    margin-top: ${RFValue(60)}px;
    font-size: ${RFValue(15)}px;
+   margin-bottom: ${RFValue(10)}px;
    font-family: ${({theme}) => theme.FONTS.POPPINSLIGHT};
 `;
